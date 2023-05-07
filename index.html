@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style/main.css" />
+    <!-- BoxIcons icon link CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+      <section class="tools-board">
+        <div class="row">
+          <label class="title">Shakllar</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <i class="bx bx-rectangle"></i>
+              <span>To'rtburchak</span>
+            </li>
+            <li class="option tool" id="circle">
+              <i class="bx bx-circle"></i>
+              <span>Doira</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <i class="bx bx-shape-triangle"></i>
+              <span>Uchburchak</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color" />
+              <label for="fill-color">Rangni to'ldirish</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">Variantlar</label>
+          <ul class="options">
+            <li class="option tool active" id="brush">
+              <i class="bx bx-brush"></i>
+              <span>Chizish</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <i class="bx bxs-eraser"></i>
+              <span>O'chirg'ich</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5" />
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">Ranglar</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4e98f7" />
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear-canvas">O'chirish</button>
+          <button class="save-img">Saqlash</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Script JS -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
