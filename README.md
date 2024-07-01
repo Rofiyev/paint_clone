@@ -13,8 +13,8 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Rofiyev/discount_down_timer.git
-   cd discount_down_timer
+   git clone https://github.com/Rofiyev/paint_clone.git
+   cd paint_clone
    ```
 
 2. To start the project, you need to open the index.html file in the browser:
